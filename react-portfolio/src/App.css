@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    background-color: #35363A;
+}
+
+    /* -------------- Nav Component ---------------------- */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo img {
+    height: 100px;
+}
+
+.navlinks {
+    margin-top: 40px;
+}
+
+.navlinks a {
+    margin: 40px;
+    color: white;
+    text-decoration: none;
+}
+
+    /* ---------------- Main Component --------------------- */
+
