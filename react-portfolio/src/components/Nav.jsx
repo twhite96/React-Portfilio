@@ -7,8 +7,8 @@ function Nav() {
                 <a href="#"><img src={logo}></img></a>
             </div>
             <div className="navlinks">
-                <a href="#">About</a>
-                <a href="#">Experience</a>
+                <a href="#about">About</a>
+                <a href="#experience">Experience</a>
                 <a href="#">Projects</a>
                 <a href="#">Testimonials</a>
             </div>

@@ -1,6 +1,17 @@
 * {
     margin: 0;
     background-color: #35363A;
+    color: white;
+    font-family: 'IBM Plex Sans', sans-serif;
+    scroll-behavior: smooth;
+}
+
+.sectionTitles {
+    font-size: 150px;
+    border-bottom: 1px solid white;
+    width: 60%;
+    padding-left: 20px;
+    margin-top: -40px;
 }
 
     /* -------------- Nav Component ---------------------- */
@@ -26,3 +37,172 @@
 
     /* ---------------- Main Component --------------------- */
 
+.main {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 60%;
+    margin: 100px auto;
+}
+
+.main .software {
+    color: #64FFDA;
+    font-size: 38px;
+    word-spacing: 5px;
+    margin: 10px;
+}
+
+.main .myname {
+    font-size: 20px;
+    color: #64FFDA;
+    word-spacing: 10px;
+    margin: 0 0 0 10px;
+}
+
+.main .name {
+    font-size: 100px;
+    color: #CCD6F6;
+}
+
+
+    /* --------------- About Component --------------- */
+
+.aboutSection {
+    margin-top: 221px;
+}
+
+.aboutBody {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-items: center;
+    margin: 50px auto;
+    justify-content: center;
+}
+
+.resumeButton {
+    color: #64FFDA;
+    border-color: #64FFDA;
+    border-radius: 5px;
+    height: 60px;
+    width: 200px;
+    font-size: 20px;
+    cursor: pointer;
+    margin: 40px 0;
+    transition: background-color .2s ease-in-out;
+    
+}
+.resumeButton:hover {
+    background-color: #00ffc31e;
+    transition: background-color .2s ease-in-out;
+}
+
+.skills {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.skills img {
+    height: 50px;
+}
+
+.skills p {
+    border-bottom: 1px solid white;
+    font-size: 24px;
+    width: 200px;
+}
+
+.skillsIcons {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    text-align: center;
+    margin: 20px 0;
+}
+
+    /* ----------- Experience Component -------------- */
+.experienceSection {
+    margin-top: 40px;
+}
+
+.experienceContainer {
+    display: flex;
+    width: 65%;
+    margin: 150px auto 50px auto;
+    
+}
+
+.employers li {
+    list-style: none;
+    width: 250px;
+    height: 50px;
+    padding-top: 25px;
+    padding-left: 25px;
+    color:#acb3cd;
+    border-left: #ccd6f63e 1px solid;
+    margin-right: 20px;
+}
+
+
+.employers li:hover {
+    cursor: pointer;
+    color: #64FFDA;
+    background-color: #5d5d5d38;
+    transition: background-color .5s ease-in-out;
+}
+
+.employerChosen {
+    color:#64FFDA !important;
+    border-left: #64FFDA 3px solid !important;
+    background-color: #5d5d5d38;
+}
+
+
+
+.employerDescription {
+    width: 700px;
+}
+
+.employer {
+    font-size: 22px;
+    margin-bottom: 10px;
+    font-weight: 700;
+    word-spacing: 5px;
+}
+
+.employer span {
+    color: #64FFDA;
+    font-weight: 400;
+}
+
+.date {
+    color: #CCD6F6;
+    margin-bottom: 20px;
+    word-spacing: 5px;
+}
+
+.employerDescription li {
+    margin: 20px 0;
+    color:#CCD6F6;
+    list-style: none;
+    line-height: 25px;
+    
+}
+
+.employerDescription ul {
+    position: relative;
+}
+
+.employerDescription li::before {
+    content: '▶';
+    left: 0;
+    position: absolute;
+    color: #64FFDA ;
+}
+
+.resume {
+    display: flex;
+    justify-content: center;
+}
