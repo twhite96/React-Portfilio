@@ -1,58 +1,74 @@
-import portfolio from "../assets/images/portfolio.png"
+import data from "../data/projectData"
+import React from "react"
+import {nanoid} from "nanoid"
 
 
 function Projects() {
-    return (
-        <div className="projectSection">
-            <p className="sectionTitles" id="projects">Projects</p>
-            <div className="projectContainer">
+
+    const element = data.map(project => (
+        project.id % 2 !== 0 ? (
+        <div key={project.id} className="projectContainer">
                 <div className="projectImage">
-                    <a href="#"><img src={portfolio} alt="" /></a> 
+                    <a href={project.live} target="_blank"><img src={project.img} alt="project image" /></a> 
                 </div>
                 <div className="projectSide">
-                    <a href="#">
-                        <p className="projectTitle">Personal Portfolio</p>
+                    <a href={project.live} target="_blank">
+                        <p className="projectTitle">{project.name}</p>
                     </a> 
-                    <p className="projectDescription">Decided to take my old personal Software Engineer Portfolio, that was outdated, just using HTML/CSS and a very small code in JavaScript and convert it all in <span className="important">React.</span>
-                    <br /><br/>
-                    I have a full understanding of how to integrate all the components, <span className="important">Hooks,</span> and gathering data from another file as objects, and pass it to a component.
-                    </p>
+                    <p className="projectDescription" dangerouslySetInnerHTML={{ __html: project.description }}></p>
                     <div className="tools">
                         <ul>
-                            <li>React</li>
-                            <li>JavaScript</li>
-                            <li>HTML/CSS</li>
+                            {project.tools.map(x =>
+                                <li key={nanoid()}>{x}</li>
+                                )}
                         </ul>
                     </div>
                     <div className="projectButtons">
-                        <button>Button 1</button>
-                        <button>Button 2</button>
+                        <a href={project.code} target="_blank"><i className="fa fa-github"></i></a>
+                        <a href={project.live} target="_blank"><i className="fa fa-external-link"></i></a>
+                    </div>
+                </div>
+            </div>) : (
+                <div key={project.id} className="projectContainer containerInverted">
+                <div className="projectImage">
+                    <a href={project.live} target="_blank"><img src={project.img} alt="" /></a> 
+                </div>
+                <div className="projectSide">
+                    <a href={project.live} target="_blank">
+                        <p className="projectTitle titleInverted">{project.name}</p>
+                    </a> 
+                    <p className="projectDescription descriptionInverted" dangerouslySetInnerHTML={{ __html: project.description }}></p>
+                    <div className="tools">
+                        <ul>
+                            {project.tools.map(x =>
+                                <li key={nanoid()}>{x}</li>
+                                )}
+                        </ul>
+                    </div>
+                    <div className="projectButtons">
+                        <a href={project.code} target="_blank"><i className="fa fa-github"></i></a>
+                        <a href={project.live} target="_blank"><i className="fa fa-external-link"></i></a>
                     </div>
                 </div>
             </div>
+            )
+            
+            
+    ))
 
+         
 
-            <div className="projectContainer containerInverted">
-                <div className="projectImage">
-                    <a href="#"><img src={portfolio} alt="" /></a> 
-                </div>
-                <div className="projectSide">
-                <a href="#">
-                        <p className="projectTitle titleInverted">Personal Portfolio</p>
-                    </a>
-                    <p className="projectDescription descriptionInverted">What a better way than to build my personal Software Engineering Portfolio with <span className="important">React.</span></p>
-                    <div className="tools">
-                        <ul>
-                            <li>React</li>
-                            <li>JavaScript</li>
-                            <li>HTML/CSS</li>
-                        </ul>
-                    </div>
-                    <div className="projectButtons">
-                        <button>Button 1</button>
-                        <button>Button 2</button>
-                    </div>
-                </div>
+    return (
+        <div className="projectSection">
+            <p className="sectionTitles" id="projects">Projects</p>
+
+            {element}
+
+            <h2 className="stayTuned">Please stay tuned for additional projects coming soon. . .</h2>
+
+            <div className="codingActivity">
+                <p>Github Coding Activity 2022</p>
+                <img src="https://ghchart.rshah.org/aroman87" alt="coding activity" />
             </div>
         </div>
     )
