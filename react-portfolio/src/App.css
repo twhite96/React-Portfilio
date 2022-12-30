@@ -6,6 +6,11 @@
     scroll-behavior: smooth;
 }
 
+.important {
+    color: #64FFDA;
+    background-color: transparent;
+}
+
 .sectionTitles {
     font-size: 150px;
     border-bottom: 1px solid white;
@@ -93,7 +98,7 @@
     
 }
 .resumeButton:hover {
-    background-color: #00ffc31e;
+    background-color: #145a4a47;
     transition: background-color .2s ease-in-out;
 }
 
@@ -123,6 +128,7 @@
 }
 
     /* ----------- Experience Component -------------- */
+
 .experienceSection {
     margin-top: 40px;
 }
@@ -143,6 +149,7 @@
     color:#acb3cd;
     border-left: #ccd6f63e 1px solid;
     margin-right: 20px;
+    font-size: 14px;
 }
 
 
@@ -205,4 +212,115 @@
 .resume {
     display: flex;
     justify-content: center;
+}
+
+
+    /* ------------------ Projects Component ------------------ */
+
+.projectSection {
+    margin-bottom: 200px;
+}
+
+.projectImage img {
+    width: 800px;
+    height: 400px;
+    border-radius: 5px; 
+    filter: grayscale(75%) blur(.8px);
+    opacity: .55;
+    transition: filter .5s;
+    transition: opacity .5s;
+    box-shadow: 5px 5px 10px -3px rgba(67, 171, 146, 0.7);
+ 
+}
+
+.projectImage img:hover {
+    filter: grayscale(0);
+    opacity: 1;
+    transition: filter .5s;
+    transition: opacity .5s;
+    
+}
+
+
+.projectContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.containerInverted {
+    flex-direction: row-reverse;
+}
+
+.projectSide {
+    width: 500px;
+    height: 350px;
+    background-color: transparent;
+}
+
+.projectTitle {
+    text-align: right;
+    margin: 15px;
+    font-size:28px;
+}
+
+.projectSide a {
+    text-decoration: none;
+}
+
+.projectTitle:hover {
+    color: #64FFDA;
+}
+
+.titleInverted {
+    text-align: left;
+}
+
+.projectDescription {
+    width: 600px;
+    padding: 20px 20px;
+    min-height: 150px;
+    margin-left: -100px;
+    margin-top: 20px;
+    text-align: right;
+    background-color: #4f4f4f;
+    border-radius: 5px;
+    color: #CCD6F6;
+    box-shadow: 5px 5px 10px -3px rgba(0, 0, 0, 0.7);
+    position: relative;
+    z-index: 999;
+}
+
+.descriptionInverted {
+    margin-left: 0;
+    text-align: left;
+}
+
+
+.tools ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 50px;
+    align-items: center; 
+    background-color: transparent;
+    
+}
+
+.tools li {
+    color: #64FFDA;
+    list-style: none;
+}
+
+.tools {
+    background-color: transparent;
+}
+
+.projectButtons {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 20px;
+    background-color: transparent;
 }

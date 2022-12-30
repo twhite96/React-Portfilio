@@ -9,7 +9,7 @@ function Nav() {
             <div className="navlinks">
                 <a href="#about">About</a>
                 <a href="#experience">Experience</a>
-                <a href="#">Projects</a>
+                <a href="#projects">Projects</a>
                 <a href="#">Testimonials</a>
             </div>
         </div>
