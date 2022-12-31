@@ -65,7 +65,7 @@ const data = [
         id: 5,
         name: "United States Marine Corps",
         className: "",
-        position: "Aviation Electronic Technicia",
+        position: "Aviation Electronic Technician",
         date: "July 2007 - May 2012",
         description: [
             "Inspected, tested, maintained, and repaired airborne replaceable weapon assemblies, shop replaceable assemblies, ancillary equipment whose aggregate constitutes a complete aircraft electronic countermeasures system or subsystem.",

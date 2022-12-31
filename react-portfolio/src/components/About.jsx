@@ -4,6 +4,7 @@ import postgres from "../assets/images/postgres.png"
 import github from "../assets/images/github1.png"
 import reactIcon from "../assets/images/React-icon.png"
 import node from "../assets/images/node.png"
+import resume from "../assets/ARoman Resume Dec 2022.pdf"
 
 function About() {
     return (
@@ -18,7 +19,7 @@ function About() {
 
                     Outside of programming, I have previously worked in law enforcement for 6 years, working with a team and working closely with different federal agencies. I did 5 years in the Marine Corps working on the electronic countermeasures for all the Marine Corps helicopters and was responsible for the training and operation of a squadron of at least 1000 Marines. Additionally, I am fully bilingual and certified in Spanish.
                 </p>
-                <a href="#"><button className="resumeButton">Download Resume</button></a>
+                <a href={resume} target="_blank"><button className="resumeButton">Download Resume</button></a>
             </div>
             <div className="skills">
                 <p>Skills</p>

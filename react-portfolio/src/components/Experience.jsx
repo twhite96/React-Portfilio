@@ -1,6 +1,7 @@
 import data from "../data/employerData"
 import React, {useState} from "react"
 import {nanoid} from "nanoid"
+import resume from "../assets/ARoman Resume Dec 2022.pdf"
 
 
 
@@ -60,7 +61,7 @@ function Experience () {
                 </div>
             </div>
             <div className="resume">
-            <a href="#"><button className="resumeButton">Download Resume</button></a>
+            <a href={resume} target="_blank"><button className="resumeButton">Download Resume</button></a>
             </div>
             
         </div>

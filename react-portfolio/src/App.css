@@ -24,6 +24,7 @@
 .navbar {
     display: flex;
     justify-content: space-between;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
 }
 
 .logo img {
@@ -375,12 +376,4 @@
 .codingActivity p {
     font-size: 30px;
     color: #64FFDA;
-}
-
-
-
-/* --------------- Testimonial Component -------------- */
-
-.testimonialSection {
-    height: 100vh;
 }
