@@ -47,8 +47,8 @@ function Experience () {
     ))
 
     return (
-        <div className="experienceSection">
-            <p className="sectionTitles" id="experience">Experience</p>
+        <div className="experienceSection" id="experience">
+            <p className="sectionTitles">Experience</p>
 
             <div className="experienceContainer">
                 <div className="employers">

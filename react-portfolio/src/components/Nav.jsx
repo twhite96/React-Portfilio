@@ -1,8 +1,19 @@
 import logo from "../assets/images/logo.png"
 
 function Nav() {
+var prevScrollpos = window.pageYOffset;
+
+window.onscroll = function() {
+    var currentScrollPos = window.pageYOffset;
+    if (prevScrollpos > currentScrollPos) {
+        document.getElementById("navbar").style.top = "0";
+    } else {
+        document.getElementById("navbar").style.top = "-110px";
+    }
+    prevScrollpos = currentScrollPos;
+}
     return (
-        <div className="navbar">
+        <div className="navbar" id="navbar">
             <div className="logo">
                 <a href="#"><img src={logo}></img></a>
             </div>

@@ -8,8 +8,8 @@ import resume from "../assets/ARoman Resume Dec 2022.pdf"
 
 function About() {
     return (
-        <div className="aboutSection">
-            <p className="sectionTitles" id="about">About Me</p>
+        <div className="aboutSection" id="about">
+            <p className="sectionTitles">About Me</p>
             <div className="aboutBody">
                 <p>
                     Aspiring Software Engineer who always strives for perfection. My experiences in the past have taught me how to learn quickly, have the ability to work independently, in a team environment, under pressure, how multi-task, and be detailed oriented. Looking for the next challenge in my career where I can use the skills that I have learned. Currently pursuing a Bachelor's Degree in Information Technology with a concentration in Software Development with an expected graduation date of March 2023. I have learned HTML, CSS, JavaScript and Python with many more upcoming learning in SQL, C++ and Java.
@@ -88,7 +88,7 @@ function About() {
                 </div>
 
             </div>
-
+        
         </div>
     )
 }

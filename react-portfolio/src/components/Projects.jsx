@@ -59,8 +59,8 @@ function Projects() {
          
 
     return (
-        <div className="projectSection">
-            <p className="sectionTitles" id="projects">Projects</p>
+        <div className="projectSection" id="projects">
+            <p className="sectionTitles">Projects</p>
 
             {element}
 
