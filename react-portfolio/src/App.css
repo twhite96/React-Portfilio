@@ -822,6 +822,14 @@
         margin-bottom: 150px !important;
     }
 
+    .projectContainer {
+        margin: 20px 0 60px 0;
+    }
+
+    .containerInverted {
+        margin-bottom: 80px;
+    }
+
     .codingActivity img {
         width: 98%;
     }
