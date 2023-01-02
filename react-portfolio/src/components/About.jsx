@@ -9,7 +9,7 @@ import {useInView } from "react-intersection-observer"
 
 function About() {
     const {ref: ref, inView: inView} = useInView({
-        threshold: 1,
+        threshold: .5,
         triggerOnce: true,
         
     })
@@ -18,6 +18,8 @@ function About() {
         threshold: 1,
         triggerOnce: true
     })
+
+    console.log(inView)
 
     return (
         <div className="aboutSection" id="about">
