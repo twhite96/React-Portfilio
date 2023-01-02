@@ -1,4 +1,6 @@
 import logo from "../assets/images/logo.png"
+import MobileNav from "./MobileNav";
+
 
 function Nav() {
 var prevScrollpos = window.pageYOffset;
@@ -12,6 +14,8 @@ window.onscroll = function() {
     }
     prevScrollpos = currentScrollPos;
 }
+
+
     return (
         <div className="navbar" id="navbar">
             <div className="logo">
@@ -21,6 +25,10 @@ window.onscroll = function() {
                 <a href="#about">About</a>
                 <a href="#experience">Experience</a>
                 <a href="#projects">Projects</a>
+            </div>
+            
+            <div className="hamMenu">
+                <MobileNav />
             </div>
         </div>
     )

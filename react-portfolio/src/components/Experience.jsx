@@ -2,11 +2,18 @@ import data from "../data/employerData"
 import React, {useState} from "react"
 import {nanoid} from "nanoid"
 import resume from "../assets/ARoman Resume Dec 2022.pdf"
+import { useInView } from "react-intersection-observer"
 
 
 
 
 function Experience () {
+
+    const {ref, inView} = useInView({
+        threshold: 0,
+        triggerOnce: true
+    })
+
     const [info, setInfo] = useState(data)
     const [employer, setEmployer] = useState(
         <div>
@@ -50,7 +57,7 @@ function Experience () {
         <div className="experienceSection" id="experience">
             <p className="sectionTitles">Experience</p>
 
-            <div className="experienceContainer">
+            <div ref={ref} className={`${inView ?"experienceContainer fade-in appear": "experienceContainer fade-in"}`}>
                 <div className="employers">
                     <ul>
                         {name}
@@ -60,7 +67,7 @@ function Experience () {
                     {employer}
                 </div>
             </div>
-            <div className="resume">
+            <div ref={ref} className={`${inView ?"resume fade-in appear": "resume fade-in"}`}>
             <a href={resume} target="_blank"><button className="resumeButton">Download Resume</button></a>
             </div>
             

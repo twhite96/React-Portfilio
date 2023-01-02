@@ -1,10 +1,16 @@
 import data from "../data/projectData"
-import React from "react"
+import React, {useState, useEffect} from "react"
 import {nanoid} from "nanoid"
+import { useInView } from "react-intersection-observer"
 
 
 function Projects() {
 
+    const {ref, inView} = useInView({
+        threshold: .2,
+        triggerOnce: true
+    })
+    
     const element = data.map(project => (
         project.id % 2 !== 0 ? (
         <div key={project.id} className="projectContainer">
@@ -61,14 +67,15 @@ function Projects() {
     return (
         <div className="projectSection" id="projects">
             <p className="sectionTitles">Projects</p>
-
-            {element}
+            <div ref={ref} className={`${inView ? "fade-in appear theProjects": "fade-in "}`}>
+                {element}
+            </div>
 
             <h2 className="stayTuned">Please stay tuned for additional projects coming soon. . .</h2>
 
             <div className="codingActivity">
                 <p>Github Coding Activity 2022</p>
-                <img src="https://ghchart.rshah.org/aroman87" alt="coding activity" />
+                <img src="https://ghchart.rshah.org/108900/aroman87" alt="coding activity" />
             </div>
         </div>
     )
