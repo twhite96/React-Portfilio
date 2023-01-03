@@ -642,7 +642,7 @@
         background-color: #2b2b2b;
         box-shadow: 2px 2px 4px 4px rgba(0,0,0,.2);
         width: 100%;
-        height: 40px;
+        height: 50px;
         margin: 0;
         bottom: -3px;
     }
@@ -655,7 +655,7 @@
     }
 
     .contactIcons i {
-        margin: 0 10px;
+        margin: 5px 10px;
     }
     .contactLine {
         display: none;
@@ -754,7 +754,7 @@
     }
 
     .main {
-        padding: 150px 0;
+        padding: 50px 0 100px 0;
     }
 
     .myname span {
