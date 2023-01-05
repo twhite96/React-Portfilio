@@ -42,20 +42,25 @@ function About() {
                 <p>Skills</p>
                 <div className="skillsIcons">
                     <figure>
-                        <img src={html} alt="" />
-                        <figcaption>HTML</figcaption>
-                    </figure>
-                    <figure>
-                        <img src={css} alt="" />
-                        <figcaption>CSS</figcaption>
+                        <img src={reactIcon} alt="" />
+                        <figcaption>React</figcaption>
                     </figure>
                     <figure>
                         <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="" />
                         <figcaption>JavaScript</figcaption>
                     </figure>
                     <figure>
+                        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/redux/redux-original.svg" alt="Redux" />
+                        <figcaption>Redux</figcaption>
+                    </figure>
+                    
+                    <figure>
                         <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="" />
                         <figcaption>Python</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="https://cdn.worldvectorlogo.com/logos/django.svg" alt="" />
+                        <figcaption>Django</figcaption>
                     </figure>
                     <figure>
                         <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="" />
@@ -65,18 +70,15 @@ function About() {
                         <img src={github} alt="" />
                         <figcaption>GitHub</figcaption>
                     </figure>
-                    <figure>
-                        <img src={reactIcon} alt="" />
-                        <figcaption>React</figcaption>
-                    </figure>
-                    <figure>
-                        <img src="https://cdn.worldvectorlogo.com/logos/django.svg" alt="" />
-                        <figcaption>Django</figcaption>
-                    </figure>
+                    
                 </div>
 
                 <p>Exposure</p>
                 <div className="skillsIcons">
+                    <figure>
+                        <img src={node} alt="" />
+                        <figcaption>Node JS</figcaption>
+                    </figure>
                     <figure>
                         <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg" alt="" />
                         <figcaption>C++</figcaption>
@@ -84,10 +86,6 @@ function About() {
                     <figure>
                         <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" alt="" />
                         <figcaption>Java</figcaption>
-                    </figure>
-                    <figure>
-                        <img src={node} alt="" />
-                        <figcaption>Node JS</figcaption>
                     </figure>
                     <figure>
                         <img src={postgres} alt="" />
