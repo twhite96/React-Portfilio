@@ -1,10 +1,8 @@
-import html from "../assets/images/html.png"
-import css from "../assets/images/css.png"
 import postgres from "../assets/images/postgres.png"
 import github from "../assets/images/github1.png"
 import reactIcon from "../assets/images/React-icon.png"
 import node from "../assets/images/node.png"
-import resume from "../assets/ARoman Resume Dec 2022.pdf"
+import resume from "../assets/ARoman Resume Jan 2023.pdf"
 import {useInView } from "react-intersection-observer"
 
 function About() {
@@ -50,8 +48,16 @@ function About() {
                         <figcaption>JavaScript</figcaption>
                     </figure>
                     <figure>
-                        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/redux/redux-original.svg" alt="Redux" />
-                        <figcaption>Redux</figcaption>
+                        <img src={node} alt="" />
+                        <figcaption>Node JS</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="https://skillshack.blob.core.windows.net/uploads/express.webp" alt="" />
+                        <figcaption>Express JS</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg" alt="" />
+                        <figcaption>MongoDB</figcaption>
                     </figure>
                     
                     <figure>
@@ -70,15 +76,24 @@ function About() {
                         <img src={github} alt="" />
                         <figcaption>GitHub</figcaption>
                     </figure>
+                    <figure>
+                        <img src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg" alt="tailwind" />
+                        <figcaption>TailWind CSS</figcaption>
+                    </figure>
                     
                 </div>
 
                 <p>Exposure</p>
                 <div className="skillsIcons">
                     <figure>
-                        <img src={node} alt="" />
-                        <figcaption>Node JS</figcaption>
+                        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" alt="typescript" />
+                        <figcaption>TypeScript</figcaption>
                     </figure>
+                    <figure>
+                        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/redux/redux-original.svg" alt="Redux" />
+                        <figcaption>Redux</figcaption>
+                    </figure>
+                    
                     <figure>
                         <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg" alt="" />
                         <figcaption>C++</figcaption>

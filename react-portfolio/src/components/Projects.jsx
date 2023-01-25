@@ -71,7 +71,6 @@ function Projects() {
                 {element}
             </div>
 
-            <h2 className="stayTuned">Please stay tuned for additional projects coming soon. . .</h2>
 
             <div className="codingActivity">
                 <p>Github Coding Activity 2022</p>

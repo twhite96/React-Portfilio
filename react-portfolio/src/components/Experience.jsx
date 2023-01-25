@@ -1,7 +1,7 @@
 import data from "../data/employerData"
 import React, {useState} from "react"
 import {nanoid} from "nanoid"
-import resume from "../assets/ARoman Resume Dec 2022.pdf"
+import resume from "../assets/ARoman Resume Jan 2023.pdf"
 import { useInView } from "react-intersection-observer"
 
 

@@ -833,6 +833,9 @@
     .codingActivity img {
         width: 98%;
     }
+    .codingActivity p {
+        text-align: center;
+    }
     .navlinks {
         display: none
     }
