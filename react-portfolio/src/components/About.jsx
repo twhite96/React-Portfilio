@@ -24,7 +24,7 @@ function About() {
             <p className="sectionTitles">About Me</p>
             <div ref={ref} className={`${inView ? "aboutBody fade-in appear" :"aboutBody fade-in"}`}>
                 <p>
-                    Hello, my name is <span className="important">Angel Roman</span> and this is my backstory. After finishing my Bachelor in Criminal Justice in 2012 I decided to further my education and take classes in Information Technology. The more programming classes I took, the more I fell in love with software development. This coincided with the conclusion of my military commitment and I took the next several years to focus on a career in law enforcement and spend time concentrating on my young family. Although I had put my education on hold, I still continued to take courses to further my IT knowledge. Fast forward to 2021, I decided to jump back in and become a <span className="important">Software Engineer.</span> In 2022, I graduated with a <span className="coral">Bachelor in Information Technology</span> with a Concentration in <span className="important">Software Development.</span> In earning this degreeI have learned multiple languages and am ready to find the next challenge in my career where I am able to use these skills.
+                    Hello, my name is <span className="important">Angel Roman</span> and this is my backstory. After finishing my Bachelor in Criminal Justice in 2012 I decided to further my education and take classes in Information Technology. The more programming classes I took, the more I fell in love with software development. This coincided with the conclusion of my military commitment and I took the next several years to focus on a career in law enforcement and spend time concentrating on my young family. Although I had put my education on hold, I still continued to take courses to further my IT knowledge. Fast forward to 2021, I decided to jump back in and become a <span className="important">Software Engineer.</span> In 2022, I graduated with a <span className="coral">Bachelor in Information Technology</span> with a Concentration in <span className="important">Software Development.</span> In earning this degree, I have learned multiple languages and I am ready to find the next challenge in my career where I am able to use these skills.
                 </p>
                     <br/>
                 <p>
@@ -85,6 +85,10 @@ function About() {
 
                 <p>Exposure</p>
                 <div className="skillsIcons">
+                    <figure>
+                        <img src="https://angular.io/assets/images/logos/angular/angular.svg" alt="Angular Logo" />
+                        <figcaption>Angular</figcaption>
+                    </figure>
                     <figure>
                         <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" alt="typescript" />
                         <figcaption>TypeScript</figcaption>
